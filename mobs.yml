@@ -1,0 +1,81 @@
+# bat, blaze, cavespider, creeper, skeleton, skeletonwither slime, spider, magmacube, pigmen, babypigmen,  
+# witch, wolf,  ghast, zombie, babyzombie, villagezombie, babyvillagezombie, irongolem, snowman,
+# wither, enderdragon, horse, babyhorse, pig, babypig, cow, babycow, ocelot, babyocelot, mushroomcow,
+# babymushroomcow, villager, babyvillager.
+#    =============== Skills \/ ===========================================================---
+#    - spawnadd,<bossnamefromthisconfig>,<lifetotaltospawnat>,<amount>,<chance>
+#    - teleport,<radius>,<chance>
+#    - dragin,<radius>,<chance>
+#    - tnt,<radius>,<chance>
+#    - potion,<NAME>:<DURATION>:<AMPLIFIER>:<RADIUS>,<chance>
+#    - toss,<chance>,<radius>,<power (very sensitive 2 is strong)>
+#    - ignite,<chance>,<radius>,<duration>
+#
+#    === Potion Examples =================================================================---
+#    - potion,SLOW:5:2:20,0.035
+#    - potion,POISON:5:2,0.035
+#    - potion,WITHER:5:2,0.035
+#    - potion,CONFUSION:5:2,0.035
+#    - potion,HARM:5:2 0.031
+#    - potion,BLINDNESS:5:2,0.035
+Mobs:
+    Skellington:
+        Type: 'skeleton'
+        DisplayName: '&4Skellington'
+        Health: 200
+        Damage: 3
+        Despawn: false
+        ArrowImmune: false
+        DeathBroadcast: true
+        Equipment:
+        -
+        Items:
+        - 'Dirt,1.0'
+        - 'TestHelmet,1.0'
+        Skills:
+        - 'Parry,0.75'
+    God:
+        Type: 'horse'
+        DisplayName: '&eGod'
+        Health: 200
+        Damage: 3
+        Despawn: false
+        ArrowImmune: false
+        DeathBroadcast: true
+        Equipment:
+        -
+        Items:
+        - 'Dirt,1.0'
+        - 'TestHelmet,1.0'
+        Skills:
+        - 'Parry,0.30'
+        - 'Potion,CONFUSION:5:2:100,0.20'
+        - 'toss,0.20,50,1'
+    Zimbaweeb:
+        Type: 'slime'
+        DisplayName: '&2Zimbaweeb'
+        Health: 200
+        Damage: 5
+        Despawn: false
+        ArrowImmune: true
+        DeathBroadcast: true
+        Equipment:
+        -
+        Items:
+        Skills:
+        - 'shuffle,0.20,25'
+    SplashSpammer:
+        Type: 'witch'
+        DisplayName: '&2Zimbaweeb'
+        Health: 220
+        Damage: 1
+        Despawn: false
+        ArrowImmune: true
+        DeathBroadcast: true
+        Equipment:
+        -
+        Items:
+        Skills:
+        - 'potion,HARM:5:2,0.20'
+        - 'spawnadd,0.05,Skellington,1,50'
+        - 'teleport,0.25,45'

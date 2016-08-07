@@ -1,0 +1,23 @@
+name: MobBosses
+main: boss.BossPlugin
+<<<<<<< HEAD
+<<<<<<< HEAD
+version: 1.3
+authors: [Dolphindalt, gabrielmaennl5]
+=======
+version: 0.1
+author: Dolphindalt
+>>>>>>> origin/master
+=======
+version: 0.1
+author: Dolphindalt
+>>>>>>> origin/master
+description: Mob library recreation.
+softdepend: [Carbyne]
+commands:
+    boss:
+        description: Default boss command.
+permisions:
+    boss.admin:
+        description: Admin permissions for the entire plugin.
+        default: op
